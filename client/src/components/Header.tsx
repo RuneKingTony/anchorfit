@@ -95,9 +95,6 @@ const Header = ({ onCartClick, onAuthClick, onDashboardClick }: HeaderProps) => 
               <a href="#products" className="text-white hover:text-gray-200 transition-colors font-medium py-2">
                 Products
               </a>
-              <a href="#about" className="text-white hover:text-gray-200 transition-colors font-medium py-2">
-                About
-              </a>  
               <a href="#contact" className="text-white hover:text-gray-200 transition-colors font-medium py-2">
                 Contact
               </a>
