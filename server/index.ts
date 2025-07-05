@@ -72,10 +72,10 @@ app.use((req, res, next) => {
   //   log(`serving on port ${port}`);
   // });
 
-  const PORT = parseInt(process.env.PORT || '3000', 10);
+  const PORT = parseInt(process.env.PORT || '5000', 10);
 const HOST = '0.0.0.0'; // Replit requires this
 
-app.listen(PORT, HOST, () => {
+server.listen(PORT, HOST, () => {
   console.log(`Server running at http://${HOST}:${PORT}`);
 });
 })();
