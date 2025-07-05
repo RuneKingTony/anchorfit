@@ -1,0 +1,24 @@
+Log
+POST /emails
+Endpoint
+/emails
+Date
+4 minutes ago
+Status
+Method
+POST
+User-Agent
+resend-node:4.6.0
+Response Body
+{
+    "name": "validation_error",
+    "message": "You can only send testing emails to your own email address (aftee.ng@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.",
+    "statusCode": 403
+}
+Request Body
+{
+    "to": ["anthonynkwa92@gmail.com"],
+    "from": "Anchor Fit <noreply@resend.dev>",
+    "html": "      <div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;\">        <h2 style=\"color: #333; text-align: center; margin-bottom: 30px;\">🔐 Verify Your Email - Anchor Fit</h2>                <div style=\"background-color: #cce5ff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #007bff;\">          <h3 style=\"color: #004085; margin-top: 0;\">Welcome to Anchor Fit!</h3>          <p style=\"color: #004085; margin-bottom: 0;\">            Thank you for signing up! Please verify your email address to complete your registration and start shopping.          </p>        </div>        <div style=\"text-align: center; margin: 30px 0;\">          <a href=\"https://1895bf81-b76a-42cf-bb71-d5991c7c1d04-00-3by3jskulejm5.spock.replit.dev/verify-email?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyOGM0MDkyZS03MWYyLTRhMDItYjdkZi0zZGQ2NTczNmM2MDEiLCJpYXQiOjE3NTE3MDYyNzMsImV4cCI6MTc1MTc5MjY3M30.Y3etgEO8IxNsOeoeoGb3q3jpl7sa7dcEPUD3VihfGhg\"              style=\"background-color: #007bff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;\">            Verify Email Address          </a>        </div>                <div style=\"background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 20px;\">          <p style=\"margin: 0; color: #666;\">            If the button doesn't work, copy and paste this link into your browser:          </p>          <p style=\"word-break: break-all; color: #007bff; margin: 10px 0;\">https://1895bf81-b76a-42cf-bb71-d5991c7c1d04-00-3by3jskulejm5.spock.replit.dev/verify-email?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyOGM0MDkyZS03MWYyLTRhMDItYjdkZi0zZGQ2NTczNmM2MDEiLCJpYXQiOjE3NTE3MDYyNzMsImV4cCI6MTc1MTc5MjY3M30.Y3etgEO8IxNsOeoeoGb3q3jpl7sa7dcEPUD3VihfGhg</p>        </div>                <div style=\"background-color: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107;\">          <p style=\"margin: 0; color: #856404;\">            <strong>Security Notice:</strong> This verification link will expire in 24 hours for security reasons.          </p>        </div>        <div style=\"text-align: center; margin-top: 30px;\">          <p style=\"color: #666;\">            If you didn't create an account with us, please ignore this email.          </p>          <p style=\"color: #666;\">            Need help? Contact us at support@anchorfit.com          </p>        </div>      </div>    ",
+    "subject": "Verify Your Email - Anchor Fit"
+}
