@@ -72,7 +72,7 @@ const ImageZoomModal = ({ isOpen, onClose, imageUrl, productName }: ImageZoomMod
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl p-0 border-0 bg-transparent shadow-none !rounded-lg overflow-hidden">
         <div className="relative">
-            <img src={imageUrl} alt={`Zoomed view of ${productName}`} className="w-full h-auto max-h-[90vh] object-contain rounded-lg" />
+            <img src={imageUrl} alt={`Zoomed view of ${productName}`} loading="lazy" className="w-full h-auto max-h-[90vh] object-contain rounded-lg" />
             <DialogFooter className="absolute bottom-4 right-4 flex items-center gap-2 bg-black/30 backdrop-blur-sm p-2 rounded-lg">
                 <Button variant="secondary" size="icon" onClick={handleDownload} title="Download Image">
                     <Download className="h-5 w-5" />

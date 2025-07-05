@@ -1,14 +1,25 @@
+import { useState } from "react";
+
 const Hero = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 z-10">
+        {!videoLoaded && (
+          <div className="w-full h-full bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center">
+            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white"></div>
+          </div>
+        )}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          preload="metadata"
+          onLoadedData={() => setVideoLoaded(true)}
+          className={`w-full h-full object-cover transition-opacity duration-500 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <source src="/lovable-uploads/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
